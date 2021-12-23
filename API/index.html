@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="main" id="main" align="center ">
+			<h1>API : Application  Programming Interface</h1>
+
+	<section>
+			<h1>What is Your Personality.!</h1>
+			<div class="centerdiv">
+				<div class="name">
+					<label>Enter your name</label>
+					<br>
+					<input type="Name" name="name" placeholder="Name " id="nameid">			
+				</div>
+					<br>
+				<div class="imgdiv" >
+					<img src="3.jpg" height="250px" width="200px" class="imgdata">
+				</div>
+				
+				<button style="margin-left:40% ;" class="btn" id="btn">Click Me</button>
+
+
+			</div>
+
+
+	</section>
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+				$('button').click(function(){
+					const name = $('#nameid').val();
+					alert(name);	
+					$('.imgdata').attr('src',`https://joeschmoe.io/api/v1/${name}`)
+				});
+		});
+
+
+	</script>
+</body>
+</html>
